@@ -33,12 +33,12 @@
 		9C4E36B4167E2285005D3B4C /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C4E36B3167E2285005D3B4C /* 1.jpg */; };
 		9C4E36B6167E22B9005D3B4C /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9C4E36B5167E22B9005D3B4C /* 6.jpg */; };
 		9C4E36B8167E2E90005D3B4C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9C4E36B7167E2E8F005D3B4C /* README.md */; };
-		9C4E36C0167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.26.21 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C4E36BA167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.26.21 PM.png */; };
-		9C4E36C1167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.26.24 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C4E36BB167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.26.24 PM.png */; };
-		9C4E36C2167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.26.28 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C4E36BC167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.26.28 PM.png */; };
-		9C4E36C3167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.26.44 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C4E36BD167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.26.44 PM.png */; };
-		9C4E36C4167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.26.57 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C4E36BE167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.26.57 PM.png */; };
-		9C4E36C5167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.30.44 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C4E36BF167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.30.44 PM.png */; };
+		9C4E36D5167E3BBF005D3B4C /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C4E36CF167E3BBF005D3B4C /* 1.png */; };
+		9C4E36D6167E3BBF005D3B4C /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C4E36D0167E3BBF005D3B4C /* 2.png */; };
+		9C4E36D7167E3BBF005D3B4C /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C4E36D1167E3BBF005D3B4C /* 3.png */; };
+		9C4E36D8167E3BBF005D3B4C /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C4E36D2167E3BBF005D3B4C /* 4.png */; };
+		9C4E36D9167E3BBF005D3B4C /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C4E36D3167E3BBF005D3B4C /* 5.png */; };
+		9C4E36DA167E3BBF005D3B4C /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C4E36D4167E3BBF005D3B4C /* 6.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,12 +78,12 @@
 		9C4E36B3167E2285005D3B4C /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		9C4E36B5167E22B9005D3B4C /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
 		9C4E36B7167E2E8F005D3B4C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		9C4E36BA167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.26.21 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot Dec 16, 2012 9.26.21 PM.png"; sourceTree = "<group>"; };
-		9C4E36BB167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.26.24 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot Dec 16, 2012 9.26.24 PM.png"; sourceTree = "<group>"; };
-		9C4E36BC167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.26.28 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot Dec 16, 2012 9.26.28 PM.png"; sourceTree = "<group>"; };
-		9C4E36BD167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.26.44 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot Dec 16, 2012 9.26.44 PM.png"; sourceTree = "<group>"; };
-		9C4E36BE167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.26.57 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot Dec 16, 2012 9.26.57 PM.png"; sourceTree = "<group>"; };
-		9C4E36BF167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.30.44 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iOS Simulator Screen shot Dec 16, 2012 9.30.44 PM.png"; sourceTree = "<group>"; };
+		9C4E36CF167E3BBF005D3B4C /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		9C4E36D0167E3BBF005D3B4C /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		9C4E36D1167E3BBF005D3B4C /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		9C4E36D2167E3BBF005D3B4C /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		9C4E36D3167E3BBF005D3B4C /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
+		9C4E36D4167E3BBF005D3B4C /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,7 +155,7 @@
 		9C36100A1658FB5C00D03E64 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9C4E36B9167E2F05005D3B4C /* Screenshots */,
+				9C4E36CE167E3BBF005D3B4C /* Screenshots */,
 				9C4E36A6167E226D005D3B4C /* sample */,
 				9C4E3692167DCF77005D3B4C /* tile.png */,
 				9C36100B1658FB5C00D03E64 /* ImageShowcase-Info.plist */,
@@ -185,19 +185,19 @@
 			path = ../../../../../../Users/bilal/Desktop/sample;
 			sourceTree = "<group>";
 		};
-		9C4E36B9167E2F05005D3B4C /* Screenshots */ = {
+		9C4E36CE167E3BBF005D3B4C /* Screenshots */ = {
 			isa = PBXGroup;
 			children = (
-				9C4E36BA167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.26.21 PM.png */,
-				9C4E36BB167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.26.24 PM.png */,
-				9C4E36BC167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.26.28 PM.png */,
-				9C4E36BD167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.26.44 PM.png */,
-				9C4E36BE167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.26.57 PM.png */,
-				9C4E36BF167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.30.44 PM.png */,
+				9C4E36CF167E3BBF005D3B4C /* 1.png */,
+				9C4E36D0167E3BBF005D3B4C /* 2.png */,
+				9C4E36D1167E3BBF005D3B4C /* 3.png */,
+				9C4E36D2167E3BBF005D3B4C /* 4.png */,
+				9C4E36D3167E3BBF005D3B4C /* 5.png */,
+				9C4E36D4167E3BBF005D3B4C /* 6.png */,
 			);
 			name = Screenshots;
-			path = /Users/bilal/Desktop/Screenshots;
-			sourceTree = "<absolute>";
+			path = images/Screenshots;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -267,12 +267,12 @@
 				9C4E36B4167E2285005D3B4C /* 1.jpg in Resources */,
 				9C4E36B6167E22B9005D3B4C /* 6.jpg in Resources */,
 				9C4E36B8167E2E90005D3B4C /* README.md in Resources */,
-				9C4E36C0167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.26.21 PM.png in Resources */,
-				9C4E36C1167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.26.24 PM.png in Resources */,
-				9C4E36C2167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.26.28 PM.png in Resources */,
-				9C4E36C3167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.26.44 PM.png in Resources */,
-				9C4E36C4167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.26.57 PM.png in Resources */,
-				9C4E36C5167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.30.44 PM.png in Resources */,
+				9C4E36D5167E3BBF005D3B4C /* 1.png in Resources */,
+				9C4E36D6167E3BBF005D3B4C /* 2.png in Resources */,
+				9C4E36D7167E3BBF005D3B4C /* 3.png in Resources */,
+				9C4E36D8167E3BBF005D3B4C /* 4.png in Resources */,
+				9C4E36D9167E3BBF005D3B4C /* 5.png in Resources */,
+				9C4E36DA167E3BBF005D3B4C /* 6.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
