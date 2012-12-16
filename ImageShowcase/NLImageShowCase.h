@@ -1,5 +1,5 @@
 //
-//  NLAppDelegate.h
+//  NLImageShowCase.h
 //  ImageShowcase
 //
 // Copyright © 2012, Mirza Bilal (bilal@mirzabilal.com)
@@ -23,10 +23,37 @@
 // PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
 // IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
 // ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-#import <UIKit/UIKit.h>
 
-@interface NLAppDelegate : UIResponder <UIApplicationDelegate>
+#import <Foundation/Foundation.h>
+#import "NLImageShowCaseCell.h"
 
-@property (strong, nonatomic) UIWindow *window;
+#import "NLImageViewDataSource.h"
+#import "NLImageShowcaseCellDelegate.h"
+
+@interface NLImageShowCase : UIView <NLImageShowcaseCellDelegate>
+{
+    @private
+    UIScrollView* _scrollView;
+    NSMutableArray* itemsInShowCase;
+    id<NLImageViewDataSource> __unsafe_unretained _dataSource;
+    
+    NSUInteger _itemsInRowCount;
+    CGSize _cellSize;
+    CGFloat _leftOffset;
+    CGFloat _topOffset;
+    CGFloat _rowSpacing;
+    CGFloat _columnSpacing;
+    
+    BOOL _deleteMode;
+    CGFloat _lastXPos;
+    CGFloat _lastYPos;
+    int lastIndex;
+}
+
+@property (nonatomic, readwrite) BOOL deleteMode;
+- (bool)addImage: (UIImage*)item;
+- (id)setDataSource:(id<NLImageViewDataSource>)dataSource;
+- (void)rearrageItems:(CGFloat)frameWidth fromIndex:(NSInteger) index;
+- (void) viewClicked;
 
 @end

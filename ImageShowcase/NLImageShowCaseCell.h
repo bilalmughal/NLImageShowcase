@@ -1,5 +1,5 @@
 //
-//  NLAppDelegate.h
+//  NLImageShowCaseCell.h
 //  ImageShowcase
 //
 // Copyright © 2012, Mirza Bilal (bilal@mirzabilal.com)
@@ -23,10 +23,25 @@
 // PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
 // IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
 // ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-#import <UIKit/UIKit.h>
 
-@interface NLAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+#import <Foundation/Foundation.h>
+#import "NLImageShowcaseCellDelegate.h"
+@interface NLImageShowCaseCell : UIView
+{
+    @private
+    id<NLImageShowcaseCellDelegate> __unsafe_unretained _cellDelegate;
+    UIImage* _image;
+    UIButton* _deleteButton;
+    UIButton* _mainImage;
+    NSTimer* _timer;
+    NSInteger _index;
+    BOOL _deleteMode;
+}
+@property (nonatomic, readonly) UIImage* image;
+@property (nonatomic, unsafe_unretained) id<NLImageShowcaseCellDelegate> cellDelegate;
+@property (nonatomic, readwrite) NSInteger index;
+@property (nonatomic, readwrite) BOOL deleteMode;
+- (id)initWithImage:(UIImage*)image;
+- (id)setMainImage:(UIImage*)image;
 
 @end

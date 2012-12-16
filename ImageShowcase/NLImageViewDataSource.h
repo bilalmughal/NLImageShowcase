@@ -1,5 +1,5 @@
 //
-//  NLAppDelegate.h
+//  NLImageViewDataSource.h
 //  ImageShowcase
 //
 // Copyright © 2012, Mirza Bilal (bilal@mirzabilal.com)
@@ -23,10 +23,17 @@
 // PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
 // IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
 // ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-#import <UIKit/UIKit.h>
 
-@interface NLAppDelegate : UIResponder <UIApplicationDelegate>
+#import <Foundation/Foundation.h>
 
-@property (strong, nonatomic) UIWindow *window;
+@class NLImageShowCase;
+@protocol NLImageViewDataSource <NSObject>
 
+- (CGSize)imageViewSizeInShowcase:(NLImageShowCase *) imageShowCase;
+- (CGFloat)imageLeftOffsetInShowcase:(NLImageShowCase *) imageShowCase;
+- (CGFloat)imageTopOffsetInShowcase:(NLImageShowCase *) imageShowCase;
+- (CGFloat)rowSpacingInShowcase:(NLImageShowCase *) imageShowCase;
+- (CGFloat)columnSpacingInShowcase:(NLImageShowCase *) imageShowCase;
+- (void)imageClicked:(NLImageShowCase *)imageShowCase imageShowCaseCell:(NLImageShowCaseCell*)imageShowCaseCell;
+- (void)imageTouchLonger:(NLImageShowCase *)imageShowCase imageIndex:(NSInteger)index;
 @end

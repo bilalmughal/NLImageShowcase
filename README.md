@@ -1,7 +1,19 @@
-//
-//  NLAppDelegate.h
-//  ImageShowcase
-//
+ImageShowcase for iOS
+
+ImageShowcase is a UIView subclass. It can be easily integrated to any application
+and almost everything is customizable to fit into your App.
+
+Features:
+- Customizable layout with configurable (using delegates)
+  * Thumbnail Size
+  * Thumbnail Row & Spacing
+  * Top Left Spacing
+
+- Independent Image Viewer.
+- Optimized thumbnail generation which crop/resize an image to fit into size definded.
+- Delete Images with Springboard Animation
+
+
 // Copyright © 2012, Mirza Bilal (bilal@mirzabilal.com)
 // All rights reserved.
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -23,10 +35,3 @@
 // PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER
 // IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
 // ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-#import <UIKit/UIKit.h>
-
-@interface NLAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
-@end
