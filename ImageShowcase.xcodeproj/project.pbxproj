@@ -104,7 +104,6 @@
 		9C360FF41658FB5C00D03E64 = {
 			isa = PBXGroup;
 			children = (
-				9C4E36B9167E2F05005D3B4C /* Screenshots */,
 				9C4E36B7167E2E8F005D3B4C /* README.md */,
 				9C3610091658FB5C00D03E64 /* ImageShowcase */,
 				9C3610021658FB5C00D03E64 /* Frameworks */,
@@ -156,6 +155,7 @@
 		9C36100A1658FB5C00D03E64 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9C4E36B9167E2F05005D3B4C /* Screenshots */,
 				9C4E36A6167E226D005D3B4C /* sample */,
 				9C4E3692167DCF77005D3B4C /* tile.png */,
 				9C36100B1658FB5C00D03E64 /* ImageShowcase-Info.plist */,
@@ -196,8 +196,8 @@
 				9C4E36BF167E2F06005D3B4C /* iOS Simulator Screen shot Dec 16, 2012 9.30.44 PM.png */,
 			);
 			name = Screenshots;
-			path = ../../../../../Users/bilal/Desktop/Screenshots;
-			sourceTree = "<group>";
+			path = /Users/bilal/Desktop/Screenshots;
+			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
 
