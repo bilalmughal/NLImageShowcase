@@ -2,9 +2,12 @@
 ----
 
 
-![](https://github.com/bilalmughal/NLImageShowcase/blob/master/ImageShowcase/images/Screenshots/1.png?raw=true) --- ![](https://github.com/bilalmughal/NLImageShowcase/blob/master/ImageShowcase/images/Screenshots/2.png?raw=true)
+![](https://github.com/bilalmughal/NLImageShowcase/blob/master/ImageShowcase/images/Screenshots/1.png?raw=true) ___ ![](https://github.com/bilalmughal/NLImageShowcase/blob/master/ImageShowcase/images/Screenshots/2.png?raw=true)
+
 ![](https://github.com/bilalmughal/NLImageShowcase/blob/master/ImageShowcase/images/Screenshots/3.png?raw=true)
-![](https://github.com/bilalmughal/NLImageShowcase/blob/master/ImageShowcase/images/Screenshots/4.png?raw=true)![] --- (https://github.com/bilalmughal/NLImageShowcase/blob/master/ImageShowcase/images/Screenshots/6.png?raw=true)
+
+![](https://github.com/bilalmughal/NLImageShowcase/blob/master/ImageShowcase/images/Screenshots/4.png?raw=true) ___ ![](https://github.com/bilalmughal/NLImageShowcase/blob/master/ImageShowcase/images/Screenshots/6.png?raw=true)
+
 ![](https://github.com/bilalmughal/NLImageShowcase/blob/master/ImageShowcase/images/Screenshots/5.png?raw=true)
 
 ImageShowcase is a UIView subclass. It can be easily integrated to any application
