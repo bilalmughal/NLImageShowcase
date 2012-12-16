@@ -39,6 +39,7 @@
 		9C4E36D8167E3BBF005D3B4C /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C4E36D2167E3BBF005D3B4C /* 4.png */; };
 		9C4E36D9167E3BBF005D3B4C /* 5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C4E36D3167E3BBF005D3B4C /* 5.png */; };
 		9C4E36DA167E3BBF005D3B4C /* 6.png in Resources */ = {isa = PBXBuildFile; fileRef = 9C4E36D4167E3BBF005D3B4C /* 6.png */; };
+		9C4E36E4167E469B005D3B4C /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9C4E36E3167E469A005D3B4C /* License.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		9C4E36D2167E3BBF005D3B4C /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
 		9C4E36D3167E3BBF005D3B4C /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
 		9C4E36D4167E3BBF005D3B4C /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
+		9C4E36E3167E469A005D3B4C /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		9C360FF41658FB5C00D03E64 = {
 			isa = PBXGroup;
 			children = (
+				9C4E36E3167E469A005D3B4C /* License.txt */,
 				9C4E36B7167E2E8F005D3B4C /* README.md */,
 				9C3610091658FB5C00D03E64 /* ImageShowcase */,
 				9C3610021658FB5C00D03E64 /* Frameworks */,
@@ -273,6 +276,7 @@
 				9C4E36D8167E3BBF005D3B4C /* 4.png in Resources */,
 				9C4E36D9167E3BBF005D3B4C /* 5.png in Resources */,
 				9C4E36DA167E3BBF005D3B4C /* 6.png in Resources */,
+				9C4E36E4167E469B005D3B4C /* License.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
