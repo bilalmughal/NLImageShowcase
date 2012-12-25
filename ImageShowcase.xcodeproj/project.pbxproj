@@ -86,6 +86,7 @@
 		9C4E36D3167E3BBF005D3B4C /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5.png; sourceTree = "<group>"; };
 		9C4E36D4167E3BBF005D3B4C /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6.png; sourceTree = "<group>"; };
 		9C4E36E3167E469A005D3B4C /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
+		9CCB6BA9168A3E3B00B3D6BF /* Utility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Utility.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +152,7 @@
 				9C1E97DA165AD3E100394F15 /* NLImageShowcaseCellDelegate.h */,
 				9C4E36A3167DFE0E005D3B4C /* NLImageViewer.h */,
 				9C4E36A4167DFE0E005D3B4C /* NLImageViewer.m */,
+				9CCB6BA9168A3E3B00B3D6BF /* Utility.h */,
 			);
 			path = ImageShowcase;
 			sourceTree = "<group>";
@@ -212,6 +214,7 @@
 				9C360FFB1658FB5C00D03E64 /* Sources */,
 				9C360FFC1658FB5C00D03E64 /* Frameworks */,
 				9C360FFD1658FB5C00D03E64 /* Resources */,
+				9CD7F838168A384D003A285D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -281,6 +284,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9CD7F838168A384D003A285D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9C360FFB1658FB5C00D03E64 /* Sources */ = {
@@ -380,10 +399,15 @@
 		9C3610271658FB5D00D03E64 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = JailbrokeDeveloper;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = JailbrokeDeveloper;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ImageShowcase/ImageShowcase-Prefix.pch";
 				INFOPLIST_FILE = "ImageShowcase/ImageShowcase-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -391,10 +415,15 @@
 		9C3610281658FB5D00D03E64 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = JailbrokeDeveloper;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = JailbrokeDeveloper;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ImageShowcase/ImageShowcase-Prefix.pch";
 				INFOPLIST_FILE = "ImageShowcase/ImageShowcase-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

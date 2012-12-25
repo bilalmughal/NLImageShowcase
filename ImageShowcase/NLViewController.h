@@ -37,6 +37,6 @@
 }
 
 - (IBAction)addImages:(id)sender;
-
+-(NSUInteger)supportedInterfaceOrientations;
 
 @end

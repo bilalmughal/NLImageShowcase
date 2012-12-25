@@ -30,7 +30,7 @@
 #import "NLImageViewDataSource.h"
 #import "NLImageShowcaseCellDelegate.h"
 
-@interface NLImageShowCase : UIView <NLImageShowcaseCellDelegate>
+@interface NLImageShowCase : UIView <NLImageShowcaseCellDelegate,UIGestureRecognizerDelegate>
 {
     @private
     UIScrollView* _scrollView;

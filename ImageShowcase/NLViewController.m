@@ -45,15 +45,11 @@
     _imageShowCase.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"tile.png"]];
     _imageViewer.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"tile.png"]];
     _imagViewController = [[UIViewController alloc] init];
-    UIView* navView = _imagViewController.view;
-    [navView addSubview:_imageViewer];
+    [_imagViewController.view addSubview:_imageViewer];
     
-
-
     [self.view addSubview:_imageShowCase];
     [self.view setAutoresizesSubviews:YES];
     [self.view setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight];
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,9 +57,20 @@
     [super didReceiveMemoryWarning];
 }
 
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)orientation
+{
+    return YES;
+}
+
+-(NSUInteger)supportedInterfaceOrientations
+{
+    return UIInterfaceOrientationMaskAll;
+}
+
 - (IBAction)addImages:(id)sender
 {
     static int counter=0;
+    [_imageShowCase setDeleteMode:NO];
     NSString* imageName = [NSString stringWithFormat:@"%d.jpg",++counter];
     [_imageShowCase addImage:[UIImage imageNamed:imageName]];
     counter = counter % 6;
@@ -72,13 +79,13 @@
 #pragma mark - Image Showcase Protocol
 - (CGSize)imageViewSizeInShowcase:(NLImageShowCase *) imageShowCase
 {
-//    return CGSizeMake(120, 80);
-    return CGSizeMake(55, 70);
+    return CGSizeMake(120, 80);
+//    return CGSizeMake(55, 70);
 }
 - (CGFloat)imageLeftOffsetInShowcase:(NLImageShowCase *) imageShowCase
 {
-//    return 25.0f;
-    return 20.0f;
+    return 25.0f;
+//    return 20.0f;
 }
 - (CGFloat)imageTopOffsetInShowcase:(NLImageShowCase *) imageShowCase
 {
@@ -86,32 +93,23 @@
 }
 - (CGFloat)rowSpacingInShowcase:(NLImageShowCase *) imageShowCase
 {
-    return 20.0f;
-//    return 25.0f;
+//    return 20.0f;
+    return 25.0f;
 
 }
 - (CGFloat)columnSpacingInShowcase:(NLImageShowCase *) imageShowCase
 {
-    return 20.0f;
-//    return 25.0f;
+//    return 20.0f;
+    return 25.0f;
 }
 - (void)imageClicked:(NLImageShowCase *) imageShowCase imageShowCaseCell:(NLImageShowCaseCell *)imageShowCaseCell;
 {
-
-//    UIImage* image = [imageShowCaseCell image];
-    
-//    imagViewController.title = @"Hello";
     [_imageViewer setImage:[imageShowCaseCell image]];
     [self.navigationController pushViewController:_imagViewController animated:YES];
-//    [self.navigationController pushViewController:tempView animated:YES];
-    
-//    NSLog(@"NLViewController: Image Clicked: %d",index);
-    
 }
 - (void)imageTouchLonger:(NLImageShowCase *)imageShowCase imageIndex:(NSInteger)index;
 {
-    NSLog(@"NLViewController: imageTouchLonger: %d",index);
-    [_imageShowCase setDeleteMode:!(_imageShowCase.deleteMode)];    
+    [_imageShowCase setDeleteMode:!(_imageShowCase.deleteMode)];
 }
 
 @end

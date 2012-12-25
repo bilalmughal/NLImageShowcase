@@ -43,5 +43,10 @@
 @property (nonatomic, readwrite) BOOL deleteMode;
 - (id)initWithImage:(UIImage*)image;
 - (id)setMainImage:(UIImage*)image;
+- (IBAction)buttonClicked;
+- (IBAction) deleteImage;
+- (IBAction)touchCancel;
+- (IBAction)touchDown;
+- (IBAction)imagePushedLonger;
 
 @end

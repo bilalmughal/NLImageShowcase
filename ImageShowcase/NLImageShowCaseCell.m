@@ -25,6 +25,7 @@
 // ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #import "NLImageShowCaseCell.h"
+#import "Utility.h"
 #import <QuartzCore/QuartzCore.h>
 
 @implementation NLImageShowCaseCell
@@ -37,7 +38,7 @@
 {
     self = [super initWithFrame:frame];
     
-    CGFloat delButtonSize = 40;
+    CGFloat delButtonSize = 60;
     
     _deleteMode = NO;
     _deleteButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, delButtonSize, delButtonSize)];
@@ -58,11 +59,14 @@
     _mainImage.imageView.layer.shadowOpacity = 0.6;
     _mainImage.imageView.layer.shadowRadius = 1.0;
     _mainImage.imageView.clipsToBounds = NO;
+    _mainImage.userInteractionEnabled = YES;
     
-    [_mainImage addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
+    [_mainImage addTarget:self action:@selector(buttonClicked) forControlEvents:UIControlEventTouchUpInside];
+
     [_deleteButton addTarget:self action:@selector(deleteImage) forControlEvents:UIControlEventTouchUpInside];
-    [_mainImage addTarget:self action:@selector(touchDown:) forControlEvents:UIControlEventTouchDown];
-    [_mainImage addTarget:self action:@selector(touchCancel:) forControlEvents:UIControlEventTouchUpOutside];
+    [_mainImage addTarget:self action:@selector(touchDown) forControlEvents:UIControlEventTouchDown];
+    [_mainImage addTarget:self action:@selector(touchCancel) forControlEvents:UIControlEventTouchUpOutside];
+
     return self;
 }
 
@@ -84,13 +88,13 @@
         [anim setAutoreverses:YES];
         self.layer.shouldRasterize = YES;
         [self.layer addAnimation:anim forKey:@"SpringboardShake"];
-        _mainImage.userInteractionEnabled = NO;
+        //_mainImage.userInteractionEnabled = NO;
         _deleteButton.hidden = NO;
     }
     else
     {
         [self.layer removeAllAnimations];
-        _mainImage.userInteractionEnabled = YES;
+        //_mainImage.userInteractionEnabled = YES;
         _deleteButton.hidden = YES;
     }
 }
@@ -98,7 +102,7 @@
 - (void)resetView
 {
     [self.layer removeAllAnimations];
-    self.userInteractionEnabled = YES;
+//    self.userInteractionEnabled = YES;
     [self setDeleteMode:NO];
 }
 
@@ -113,15 +117,16 @@
     float imgWidth = image.size.width;
     float imgHeight = image.size.height;
     
-    float width = self.bounds.size.width;
-    float height = self.bounds.size.height;
+    float width = self.bounds.size.width*(isRetina ? 2.0f : 1.0f);
+    float height = self.bounds.size.height*(isRetina ? 2.0f : 1.0f);
     
     float horz =  imgWidth / width;
     float vert =  imgHeight / height;
+
     
     float x1 = 0,x2 = 0,y1 = 0,y2 = 0;
     
-    float scalingFactor = vert < horz ? vert : horz;
+    float scalingFactor = vert < horz ? vert * (isRetina ? 2.0f : 1.0f) : horz * (isRetina ? 2.0f : 1.0f);
     
     UIImage* resizedImage = [self resizeImage:image resizeSize:CGSizeMake(imgWidth/scalingFactor, imgHeight/scalingFactor)];
     
@@ -157,7 +162,6 @@
 }
 
 - (UIImage *)resizeImage:(UIImage*)image resizeSize:(CGSize)resizeSize {
-    
     CGImageRef refImage = image.CGImage;
     CGRect resizedRect = CGRectIntegral(CGRectMake(0, 0, resizeSize.width, resizeSize.height));
     UIGraphicsBeginImageContextWithOptions(resizeSize, NO, 0);
@@ -175,28 +179,31 @@
 }
 
 
-- (void)buttonClicked:(id)sender {
+- (IBAction)buttonClicked {
     if(_deleteMode)
         return;
     [_timer invalidate];
     [_cellDelegate imageClicked:self imageIndex:_index];
 }
-- (void) deleteImage {
+- (IBAction) deleteImage {
     [_cellDelegate deleteImage:self imageIndex:_index];
-}
-
-- (void)touchCancel:(id)sender {
     [_timer invalidate];
 }
 
-- (void)touchDown:(id)sender {
+- (IBAction)touchCancel {
+    [_timer invalidate];
+}
+
+- (IBAction)touchDown {
+    if(_deleteMode)
+        return;
     _timer = [NSTimer scheduledTimerWithTimeInterval:1
                                               target:self
                                             selector:@selector(imagePushedLonger)
                                             userInfo:nil
                                              repeats:YES];
 }
-- (void)imagePushedLonger
+- (IBAction)imagePushedLonger
 {
     [_timer invalidate];
     [_cellDelegate imageTouchLonger:self imageIndex:_index];

@@ -56,12 +56,19 @@
     [self setAutoresizingMask:UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight];
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(viewClicked)];
+    tap.delegate = self;
     [self addGestureRecognizer:tap];
-    
     
     return self;
 }
 
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+    if ([touch.view isKindOfClass:[UIButton class]]) {
+        // Ignore touch: As we do not want to handle gesture here, so pass it to NLImageShowCaseCell
+        return NO;
+    }
+    return YES;
+}
 
 - (id)setDataSource:(id<NLImageViewDataSource>)dataSource
 {
@@ -149,7 +156,6 @@
 
 - (void) viewClicked
 {
-    NSLog(@"Image Case clicked");
     if (_deleteMode) {
         [self setDeleteMode:false];
     }
