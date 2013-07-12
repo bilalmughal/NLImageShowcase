@@ -9,6 +9,6 @@
 #ifndef ImageShowcase_Utility_h
 #define ImageShowcase_Utility_h
 
-#define isRetina ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+#define isRetina ([UIScreen mainScreen].scale == 2.0f)
 
 #endif
