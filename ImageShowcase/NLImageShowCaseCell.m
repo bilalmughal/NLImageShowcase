@@ -108,7 +108,8 @@
 
 - (id)setMainImage:(UIImage*)image{
     _image = image;
-    [_mainImage setImage:[self getThumbnail:image ] forState:UIControlStateNormal];
+    //[_mainImage setImage:[self getThumbnail:image ] forState:UIControlStateNormal];
+    [_mainImage setImage:image forState:UIControlStateNormal]; 
     return self;
 }
 
